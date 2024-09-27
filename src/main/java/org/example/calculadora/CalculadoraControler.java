@@ -38,7 +38,7 @@ public class CalculadoraControler {
 
     @FXML
     void calculo(ActionEvent event) {
-        double n2, n1;
+        double n2, n1, resultado;
         try {
             n2 = Double.parseDouble(o2.getText());
             n1 = Double.parseDouble(o1.getText());
@@ -47,14 +47,21 @@ public class CalculadoraControler {
             return;
         }
         if (sumar.isSelected()) {
-
+            resultado=n1+n2;
+            res.setText(""+resultado);
         } else if (restar.isSelected()) {
-
+            resultado=n1-n2;
+            res.setText(""+(n1-n2));
         } else if (multiplicar.isSelected()) {
-
+            resultado=n1*n2;
+            res.setText(""+(n1*n2));
         } else if (dividir.isSelected()) {
-             if(o2.getText()=="0") {
-
+            resultado=n1/n2;
+             if(n2==0) {
+                System.out.println("Divisor 0 localizado");
+                o2.setText("");
+             } else {
+                 res.setText(""+(n1/n2));
              }
         }
     }
