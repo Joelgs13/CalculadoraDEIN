@@ -65,7 +65,7 @@
             <RadioButton fx:id="multiplicar" contentDisplay="CENTER" mnemonicParsing="false" text="Multiplicar" toggleGroup="$operacion" />
          </children>
       </FlowPane>
-      <TextField id="O1" fx:id="o1" alignment="CENTER_RIGHT" prefHeight="24.0" prefWidth="227.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField id="O1" fx:id="o1" prefHeight="24.0" prefWidth="227.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <TextField id="O2" fx:id="o2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <TextField id="Res" fx:id="res" GridPane.columnIndex="1" GridPane.rowIndex="6" />
    </children>
