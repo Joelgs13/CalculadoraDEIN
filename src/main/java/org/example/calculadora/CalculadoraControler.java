@@ -59,10 +59,10 @@ public class CalculadoraControler {
                 res.setText(""+resultado);
             } else if (restar.isSelected()) {
                 resultado=n1-n2;
-                res.setText(""+(n1-n2));
+                res.setText(""+(resultado));
             } else if (multiplicar.isSelected()) {
                 resultado=n1*n2;
-                res.setText(""+(n1*n2));
+                res.setText(""+(resultado));
             } else if (dividir.isSelected()) {
                 resultado=n1/n2;
                 if(n2==0) {
@@ -73,7 +73,7 @@ public class CalculadoraControler {
                     alerta.showAndWait();
                     o2.setText("");
                 } else {
-                    res.setText(""+(n1/n2));
+                    res.setText(""+(resultado));
                 }
             }
         }
